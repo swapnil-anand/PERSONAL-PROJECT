@@ -1,0 +1,87 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(†—Úğ
+]
+java:S1854¯"ARemove this useless assignment to local variable "emailResponse".(…ˆß½ùÿÿÿÿ
+Q	java:S125)"<This block of commented-out lines of code should be removed.(üö 
+N
+java:S1135Š"2Complete the task associated to this TODO comment.(¥³ù×üÿÿÿÿ
+H
+java:S1135š"2Complete the task associated to this TODO comment.(ªÏ s
+N
+java:S1481¯"2Remove this unused "emailResponse" local variable.(…ˆß½ùÿÿÿÿ
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(¢›­Äúÿÿÿÿ
+A
+java:S1172Ü"*Remove this unused method parameter "url".(ÿÛÿÚ
+‚
+java:S1128"gRemove this unused import 'com.nse.listingcompliance.lcdebtannouncementservice.constant.ErrorMessages'.(§Ó†èúÿÿÿÿ
+„
+java:S1128"iRemove this unused import 'com.nse.listingcompliance.lcdebtannouncementservice.model.EmailConfigDetails'.(ğÚÎëúÿÿÿÿ
+k
+java:S1128"PRemove this unused import 'org.springframework.scheduling.annotation.Scheduled'.(‚¡®Üûÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+A
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
+G
+java:S1144Ü"0Remove this unused private "midWarnHtml" method.(ÿÛÿÚ
+G
+java:S1144î"0Remove this unused private "midWarnText" method.(£»Œ
+M
+java:S1144ı"1Remove this unused private "lastWarnHtml" method.(­Í©øÿÿÿÿ
+H
+java:S1144"1Remove this unused private "lastWarnText" method.(¡áŒ
+Q
+java:S1144¡":Remove this unused private "allSubmissionDoneHtml" method.(úÙì†
+Q
+java:S1144¯":Remove this unused private "allSubmissionDoneText" method.(ü‚‘ª
+O
+java:S1144½"9Remove this unused private "reportSentToSEBIHtml" method.(°âh
+O
+java:S1144Ë"9Remove this unused private "reportSentToSEBIText" method.(¡Ï½6
+Ÿ
+java:S1192è"‚Define a constant instead of duplicating this literal "This is a system generated email, do not reply to this email id.
+" 8 times.(•Î«şÿÿÿÿ
+g
+java:S1192æ"PDefine a constant instead of duplicating this literal "<br> <br> <br>
+" 4 times.(øş—œ
+f
+java:S1192—"JDefine a constant instead of duplicating this literal "Regards,
+" 3 times.(›èº²úÿÿÿÿ
+w
+java:S1192ç"`Define a constant instead of duplicating this literal "<span style = \"color: red\" >
+" 4 times.(Ùª’Ş
+z
+java:S1192å"^Define a constant instead of duplicating this literal "Member Compliance Department
+" 4 times.(ï÷àŠşÿÿÿÿ
+\
+java:S1192İ"EDefine a constant instead of duplicating this literal "<p>
+" 4 times.(ú§
+`
+java:S1192×"IDefine a constant instead of duplicating this literal "</span>
+" 5 times.(Àìøö
+^
+java:S1192¦"HDefine a constant instead of duplicating this literal "System
+" 3 times.(îÌùM
+e
+java:S1192ä"NDefine a constant instead of duplicating this literal "Regards,<br>
+" 4 times.(©«
+v
+java:S1488Ï"`Immediately return this expression instead of assigning it to the temporary variable "textBody".(”ŸÒS
+|
+java:S1488Ô"`Immediately return this expression instead of assigning it to the temporary variable "htmlBody".(²ÂË¯şÿÿÿÿ
+w
+java:S1488İ"`Immediately return this expression instead of assigning it to the temporary variable "htmlBody".(ú§
+s
+java:S1488ï"\Immediately return this expression instead of assigning it to the temporary variable "text".(äŠßÚ
+w
+java:S1488ş"`Immediately return this expression instead of assigning it to the temporary variable "htmlBody".(ú§
+x
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "text".(É•Ù§üÿÿÿÿ
+x
+java:S1488¢"\Immediately return this expression instead of assigning it to the temporary variable "html".(ä©ßùÿÿÿÿ
+x
+java:S1488°"\Immediately return this expression instead of assigning it to the temporary variable "text".(É•Ù§üÿÿÿÿ
+x
+java:S1488¾"\Immediately return this expression instead of assigning it to the temporary variable "html".(ä©ßùÿÿÿÿ
+s
+java:S1488Ì"\Immediately return this expression instead of assigning it to the temporary variable "html".(úöª©

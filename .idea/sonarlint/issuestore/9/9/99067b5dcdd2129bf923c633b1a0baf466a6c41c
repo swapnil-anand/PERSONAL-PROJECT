@@ -1,0 +1,8 @@
+
+j
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonFormat'.(ıÙè‹øÿÿÿÿ8ÿ‹â¦ë/
+X
+java:S1128"BRemove this unused import 'com.mysql.cj.conf.PropertyDefinitions'.(ã³â
+H
+java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8€Œâ¦ë/
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Å–Òã

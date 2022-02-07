@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/../WIPRO_DATA/SCHEMAS/DEBT_ANN_MYSQL_SCHEMA.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../WIPRO_DATA/SCHEMAS/SECURITIES.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../WIPRO_DATA/SQL_INSER_SCRIPT/debt_ann_securities.sql" dialect="MySQL" />
+  </component>
+</project>

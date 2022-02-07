@@ -1,0 +1,49 @@
+
+o	java:S116"URename this field "sec_symbol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Œàüÿÿÿÿ
+o	java:S116"URename this field "sec_series" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÌÓÍùÿÿÿÿ
+n	java:S116"TRename this field "sec_sname" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆÎÈÖùÿÿÿÿ
+i	java:S116"TRename this field "sec_lname" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©€°
+n	java:S116"YRename this field "sec_instr_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥èÃ
+p	java:S116"VRename this field "sec_isin_cd" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Î¡–úÿÿÿÿ
+k	java:S116!"VRename this field "sec_iss_cap" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÐµ¸
+l	java:S116#"WRename this field "sec_face_val" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÇñç
+p	java:S116%"VRename this field "sec_mkt_lot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Çªåùùÿÿÿÿ
+o	java:S116'"URename this field "sec_iss_pr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™œìäúÿÿÿÿ
+p	java:S116)"VRename this field "sec_strt_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š”¶ùùÿÿÿÿ
+i	java:S116+"TRename this field "sec_ip_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç°è«
+j	java:S116-"URename this field "sec_mat_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è¸ä
+o	java:S116/"URename this field "sec_int_rt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ßÈ¦þÿÿÿÿ
+q	java:S1161"WRename this field "sec_adm_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÑ½Šúÿÿÿÿ
+o	java:S1163"URename this field "sec_adm_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó®•îùÿÿÿÿ
+q	java:S1165"WRename this field "sec_readm_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×ÁªÞýÿÿÿÿ
+p	java:S1167"VRename this field "sec_expl_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÙ †þÿÿÿÿ
+q	java:S1169"WRename this field "sec_dnld_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²ªÒâûÿÿÿÿ
+p	java:S116;"VRename this field "sec_mkt_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦­½¾üÿÿÿÿ
+o	java:S116="URename this field "sec_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ìåœœýÿÿÿÿ
+p	java:S116?"VRename this field "sec_pdup_pr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«©ø¯ùÿÿÿÿ
+k	java:S116A"VRename this field "sec_list_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯Û‰
+v	java:S116C"\Rename this field "sec_credit_rating" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯ÊÆþÿÿÿÿ
+p	java:S116E"VRename this field "sec_remarks" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‚¾Éüÿÿÿÿ
+l	java:S116G"WRename this field "sec_creat_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œû´Ž
+q	java:S116I"WRename this field "sec_creat_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ×Üúÿÿÿÿ
+s	java:S116K"YRename this field "sec_lst_upd_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Ý°¦ýÿÿÿÿ
+n	java:S116M"YRename this field "sec_lst_upd_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñ¡ç‰
+l	java:S116O"WRename this field "sec_susp_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûµå¶
+p	java:S116Q"VRename this field "sec_susp_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶¤µ­ýÿÿÿÿ
+r	java:S116S"]Rename this field "sec_temp_susp_from" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú­Øæ
+x	java:S116U"^Rename this field "sec_temp_restart_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍŒŠ¦üÿÿÿÿ
+v	java:S116W"\Rename this field "sec_list_iss_size" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú´½üûÿÿÿÿ
+m	java:S116Y"XRename this field "sec_govt_hold" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ«õÌ
+s	java:S116["YRename this field "sec_series_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êÒ’àüÿÿÿÿ
+q	java:S116]"\Rename this field "sec_temp_susp_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò€òŒ
+n	java:S116_"YRename this field "sec_comp_demat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é“·„
+v	java:S116a"\Rename this field "sec_comp_demat_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÊÜøÿÿÿÿ
+l	java:S116c"WRename this field "sec_idfn_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò·ƒ­
+o	java:S116e"ZRename this field "sec_instrm_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü©“
+r	java:S116g"]Rename this field "sec_instrm_subtype" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë¼À¦
+j	java:S116n"URename this field "sec_reason" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎØ¶§
+v	java:S116p"\Rename this field "sec_interest_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¡ì×ýÿÿÿÿ
+w	java:S116r"]Rename this field "sec_relisting_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êìÿøÿÿÿÿ
+>
+java:S1948k"(Make "symbol" transient or serializable.(€ß°–
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾Þúr

@@ -1,0 +1,269 @@
+
+import com.nse.listingcompliance.lcdebtannouncementservice.drools.classes.Adequacy
+import com.nse.listingcompliance.lcdebtannouncementservice.constant.Constants;
+
+rule "Category 2 and Subject Type 3"
+    when
+        adequacy : Adequacy(categoryId == 2 && subjectTypeId == 3)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+
+rule "Category 2 and Subject Type 4"
+    when
+        adequacy : Adequacy(categoryId == 2 && subjectTypeId == 4)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+
+rule "Category 2 and Subject Type 5"
+    when
+        adequacy : Adequacy(categoryId == 2 && subjectTypeId == 5)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 2 and Subject Type 6"
+    when
+        adequacy : Adequacy(categoryId == 2 && subjectTypeId == 6)
+    then
+        adequacy.setAdequacyType(Constants.ADEQUACY_MANUAL);
+        adequacy.setApplicationStatus(Constants.DRAFTED);
+    end
+
+rule "Category 2 and Subject Type 7"
+    when
+        adequacy : Adequacy(categoryId == 2 && subjectTypeId == 7)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 4 and Subject Type 13"
+    when
+        adequacy : Adequacy(categoryId == 4 && subjectTypeId == 13)
+    then
+        adequacy.setAdequacyType(Constants.ADEQUACY_MANUAL);
+        adequacy.setApplicationStatus(Constants.DRAFTED);
+    end
+
+rule "Category 4 and Subject Type 14"
+    when
+        adequacy : Adequacy(categoryId == 4 && subjectTypeId == 14)
+    then
+        adequacy.setAdequacyType(Constants.ADEQUACY_MANUAL);
+        adequacy.setApplicationStatus(Constants.DRAFTED);
+    end
+
+rule "Category 4 and Subject Type 15"
+    when
+        adequacy : Adequacy(categoryId == 4 && subjectTypeId == 15)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category  4 and Subject Type 16"
+    when
+        adequacy : Adequacy(categoryId == 4 && subjectTypeId == 16)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 4 and Subject Type 17"
+    when
+        adequacy : Adequacy(categoryId == 4 && subjectTypeId == 17)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 4 and Subject Type 18"
+    when
+        adequacy : Adequacy(categoryId == 4 && subjectTypeId == 18)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 3 and Subject Type 8"
+    when
+        adequacy : Adequacy(categoryId == 3 && subjectTypeId == 8)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 3 and Subject Type 15"
+    when
+        adequacy : Adequacy(categoryId == 3 && subjectTypeId == 15)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 3 and Subject Type 19"
+    when
+        adequacy : Adequacy(categoryId == 3 && subjectTypeId == 10)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 3 and Subject Type 11"
+    when
+        adequacy : Adequacy(categoryId == 3 && subjectTypeId == 11)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 3 and Subject Type 12"
+    when
+        adequacy : Adequacy(categoryId == 3 && subjectTypeId == 12)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 5 and Subject Type 19"
+    when
+        adequacy : Adequacy(categoryId == 5 && subjectTypeId == 19)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 5 and Subject Type 20"
+    when
+        adequacy : Adequacy(categoryId == 5 && subjectTypeId == 20)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 5 and Subject Type 21"
+    when
+        adequacy : Adequacy(categoryId == 5 && subjectTypeId == 21)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 1 and Subject Type 2"
+    when
+        adequacy : Adequacy(categoryId == 1 && subjectTypeId == 2)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 1 and Subject Type 1"
+    when
+        adequacy : Adequacy(categoryId == 1 && subjectTypeId == 1)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 7 and Subject Type 31"
+    when
+        adequacy : Adequacy(categoryId == 7 && subjectTypeId == 31)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 7 and Subject Type 32"
+    when
+        adequacy : Adequacy(categoryId == 7 && subjectTypeId == 32)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 7 and Subject Type 33"
+    when
+        adequacy : Adequacy(categoryId == 7 && subjectTypeId == 33)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 7 and Subject Type 34"
+    when
+        adequacy : Adequacy(categoryId == 7 && subjectTypeId == 34)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 6 and Subject Type 28"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 28)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 6 and Subject Type 22"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 22)
+    then
+        adequacy.setAdequacyType("MAYBE");
+    end
+
+rule "Category 6 and Subject Type 23"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 23)
+    then
+        adequacy.setAdequacyType(Constants.ADEQUACY_MANUAL);
+        adequacy.setApplicationStatus(Constants.DRAFTED);
+    end
+
+rule "Category 6 and Subject Type 24"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 24)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 6 and Subject Type 25"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 25)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 6 and Subject Type 26"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 26)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 6 and Subject Type 29"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 29)
+    then
+        adequacy.setAdequacyType(Constants.ADEQUACY_MANUAL);
+        adequacy.setApplicationStatus(Constants.DRAFTED);
+    end
+
+rule "Category 6 and Subject Type 27"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 27)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+
+rule "Category 6 and Subject Type 30"
+    when
+        adequacy : Adequacy(categoryId == 6 && subjectTypeId == 30)
+    then
+        adequacy.setAdequacyType(Constants.STP_SUCCESSFUL);
+        adequacy.setApplicationStatus(Constants.COMPLETE);
+    end
+

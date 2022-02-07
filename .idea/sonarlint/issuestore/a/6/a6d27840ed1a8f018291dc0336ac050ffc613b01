@@ -1,0 +1,52 @@
+
+k	java:S116"QRename this field "dsm_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨İ™éùÿÿÿÿ
+n	java:S116"TRename this field "dsm_cm_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õ·ü¤ÿÿÿÿÿ
+o	java:S116"ZRename this field "dsm_issuer_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ß‚
+v	java:S116"\Rename this field "dsm_issuer_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â¾¹¸ûÿÿÿÿ
+t	java:S116"ZRename this field "dsm_issuer_code" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òš¯³üÿÿÿÿ
+€	java:S116!"fRename this field "dsm_final_listing_ref_appno" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä„€¨ùÿÿÿÿ
+€	java:S116#"fRename this field "dsm_final_listing_red_appdt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï¯àıüÿÿÿÿ
+~	java:S116%"dRename this field "dsm_inprinciple_ref_appno" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…§°†øÿÿÿÿ
+y	java:S116'"dRename this field "dsm_inprinciple_ref_appdt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ïıà–
+s	java:S116)"YRename this field "dsm_issue_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÚÒÛßùÿÿÿÿ
+r	java:S116+"]Rename this field "dsm_settlement_day" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å¸³ƒ
+w	java:S116-"bRename this field "dsm_stock_security_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¨Ò¡
+v	java:S116/"\Rename this field "dsm_security_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ•Ã¦üÿÿÿÿ
+m	java:S1161"XRename this field "dsm_isin_code" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô½¤Ñ
+u	java:S1163"[Rename this field "dsm_allotment_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùœ÷úøÿÿÿÿ
+t	java:S1165"ZRename this field "dsm_maturity_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÍÛîüÿÿÿÿ
+z	java:S1167"`Rename this field "dsm_issue_description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÕşñûÿÿÿÿ
+t	java:S1169"ZRename this field "dsm_instrm_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÙÒğªüÿÿÿÿ
+w	java:S116;"]Rename this field "dsm_instrm_subtype" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½º•üÿÿÿÿ
+n	java:S116="YRename this field "dsm_market_lot" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µä¨ú
+n	java:S116?"YRename this field "dsm_base_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â‘ãê
+s	java:S116A"^Rename this field "dsm_security_charge" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŒêÙ¼
+n	java:S116C"YRename this field "dsm_tax_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š‚Ë±
+q	java:S116E"WRename this field "dsm_face_val" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Í©·üÿÿÿÿ
+s	java:S116G"YRename this field "dsm_paidup_val" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ›¸ßøÿÿÿÿ
+s	java:S116I"YRename this field "dsm_issue_size" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃËÄôúÿÿÿÿ
+x	java:S116K"^Rename this field "dsm_list_issue_size" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(â“¦èúÿÿÿÿ
+o	java:S116M"ZRename this field "dsm_issue_price" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£Ãû¼
+~	java:S116O"dRename this field "dsm_tot_no_of_bonds_offer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾‹ÛÃüÿÿÿÿ
+}	java:S116Q"hRename this field "dsm_tot_no_of_bonds_greenshoe" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿŒ«î
+x	java:S116S"^Rename this field "dsm_tot_no_of_bonds" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔÀÊ€şÿÿÿÿ
+y	java:S116U"_Rename this field "dsm_lockin_upto_from" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁƒÛùûÿÿÿÿ
+w	java:S116W"]Rename this field "dsm_lockin_upto_to" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğŸóÍùÿÿÿÿ
+}	java:S116Y"hRename this field "dsm_compul_demat_rolling_stat" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Õ¨—
+€	java:S116["fRename this field "dsm_compul_demat_rolling_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ³²½ıÿÿÿÿ
+j	java:S116]"URename this field "dsm_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å­éİ
+y	java:S116_"_Rename this field "dsm_admission_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø­ü½øÿÿÿÿ
+p	java:S116a"[Rename this field "dsm_admission_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÙØÇ
+q	java:S116c"\Rename this field "dsm_trade_strt_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ‡Á–
+r	java:S116e"]Rename this field "dsm_perm_susp_from" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤Ê°½
+q	java:S116g"\Rename this field "dsm_perm_susp_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²„™”
+r	java:S116i"]Rename this field "dsm_temp_susp_from" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜³äµ
+q	java:S116k"\Rename this field "dsm_temp_susp_flg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰şÄ·
+s	java:S116m"YRename this field "dsm_restart_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ø±éëüÿÿÿÿ
+v	java:S116o"aRename this field "dsm_total_targeted_amt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•ÿÄÜ
+p	java:S116q"VRename this field "dsm_remarks" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ü²¬ÿÿÿÿÿ
+q	java:S116s"WRename this field "dsm_creat_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ï²íïÿÿÿÿÿ
+l	java:S116u"WRename this field "dsm_creat_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å»¯œ
+s	java:S116w"YRename this field "dsm_lst_upd_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼×íÚúÿÿÿÿ
+s	java:S116y"YRename this field "dsm_lst_upd_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼åÌáüÿÿÿÿ
+n	java:S116{"YRename this field "dsm_deleted_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Ï°¢

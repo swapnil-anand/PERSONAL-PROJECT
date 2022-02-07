@@ -1,0 +1,2644 @@
+openapi: 3.0.1
+info:
+  title: debt Announcement Service
+  description: This service exposes end points required to support the debt Announcement journey.
+  contact:
+    name: hitesh
+    url: https://need_to_change
+    email: hitesh.p@sankeysolutions.com
+  license:
+    name: ""
+    url: http://notapplicable.io
+  version: 1.0.0
+servers:
+  - url: https://nsedtdev.nseindia.com/lc-debt-announcement-service/v1
+paths:
+
+
+
+  # **** Start ****
+  # Endpoint to fetch list of categories and respective subjects according to company type
+
+
+  /masterData:
+    get:
+      summary: fetch list of categories and respective subjects according to company type.
+      description: fetch list of categories and respective subjects according to company type.
+      tags:
+        - Application
+      operationId: getDebtAnnouncementSubjects
+      parameters:
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and Returns the arrayList of categories and  their respective subjects.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Subjects"
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to fetch list of categories and respective subjects according to company type
+
+
+
+  # **** Start ****
+  # Endpoint to fetch details of previously uploaded files from saved drafts
+
+  /companies/files:
+    get:
+      summary: get details of previously uploaded files from saved drafts by member.
+      description: get details of previously uploaded files from saved drafts by member.
+      tags:
+        - Files
+      operationId: getDebtAnnFiles
+      parameters:
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and Returns the list of previously uploaded files from drafts.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Files"
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  #  Endpoint to fetch details of previously uploaded files from saved drafts
+
+
+
+
+  # **** Start ****
+  # Endpoint to upload attachement file to dms
+
+  /announcements/{announcementUuid}/files:
+    post:
+      summary: upload attachement to DMS.
+      description: upload attachement to DMS.
+      tags:
+        - Files
+      operationId: postDebtAnnFiles
+      parameters:
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: announcementUuid
+          in: path
+          required: true
+          description: contains announcement Id for the current announcment for which the file is being uploaded
+          schema:
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                attachement:
+                  type: object
+                  items:
+                    type: string
+                    format: binary
+
+      responses:
+        200:
+          description: The request has succeeded and Returns details of uploaded file.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AddFiles"
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to upload attachement to dms
+
+
+
+  # **** Start ****
+  # Endpoint to delete attachement file.
+
+  /announcements/{announcementUuid}/files/{fileUuid}:
+    delete:
+      summary: delete submitted attachemet.
+      description: delete submitted attachement .
+      tags:
+        - Files
+      operationId: deleteDebtAnnFile
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: fileUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+
+
+      responses:
+        200:
+          description: The request has succeeded and Returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessDelete"
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    # **** End ****
+    # Endpoint to delete attachement file.
+
+
+    # **** Start ****
+    # Endpoint to View attachement file.
+
+    # /files/{fileUuid}:
+    get:
+      summary: get PDF file to users .
+      description: user click on view icon in attachement at that time this API will get uploaded attachement.
+      tags:
+        - Files
+      operationId: getDebtAnnFile
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: fileUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+
+      responses:
+        200:
+          description: The request has succeeded and Returns uploaded file.
+          content:
+            aapplication/octet-stream:
+              schema:
+                type: string
+                format: binary
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to delete attachement file.
+
+  # **** Start ****
+  # save announcement as draft or submit announcement
+
+  /announcements/{announcementUuid}/initialize:
+    post:
+      summary: initialize announcement on subject select with announcementId.
+      description: On select subject or category by user a request to create an announcement is made to the backend with a unique announcementUuid.
+      tags:
+        - Announcement
+      operationId: postDebtAnnAnnouncement
+
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+
+      responses:
+        200:
+          description: The request has succeeded and Returns application number and subject type.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  announcementId:
+                    type: string
+                  statusMessage:
+                    type: string
+
+
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+
+
+
+  # **** End ****
+  # Endpoint to  save announcement as draft or submit announcement
+
+
+  # **** Start ****
+  # Endpoint to update announcement status for submit draft announcement
+
+  /announcements:
+    put:
+      summary: save announcement for submit announcement with all the reqiured fields filled.
+      description: on save draft, the annoucement will be saved to the database with pre-initialized announcementUuid with announcement status as draft. While on submit the announcement will be saved on the backend with the same announcementUuid with status submitted/submit and the announcement will be immediately disseminated to NSE portal and once it is successfully disseminated, update the announcement status from submitted to disseminated. A mail will be triggered to the Listing Company containing sucess status for the given announcement. On delete , the announcement will be soft deleted and the status for the announcement will updated to deleted.
+
+      tags:
+        - Announcement
+      operationId: postAnnSubmitAnnouncement
+      parameters:
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnnouncementSubmit"
+
+      responses:
+        200:
+          description: The request has succeeded and Returns application number and subject type.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    announcementId:
+                      type: string
+                    statusMessage:
+                      type: string
+
+
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to  save announcement as draft or submit announcement
+
+
+  # **** Start ****
+  # Save ISIN data file.
+
+  /announcements/{announcementUuid}/isin:
+    post:
+      summary: Save ISIN data file.
+      description: Save ISIN data after validation from the frontend side to database with announcementUuid as foreign key.
+      tags:
+        - Application
+      operationId: postDebtAnnISINSave
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ISINSaveRequest'
+      responses:
+        200:
+          description: The request has succeeded and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    # **** End ****
+    # Endpoint to upload ISIN data file.
+
+
+    # **** Start ****
+    # Endpoint to get ISIN details for that announcement.
+
+    # /isin/{announcementId}:
+    get:
+      summary: get ISIN details for that announcement.
+      description: get ISIN details for that announcement.
+      tags:
+        - Application
+      operationId: getDebtAnnISIN
+
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and returns get ISIN details for that announcement.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getISINDetails'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to get ISIN details for that announcement.
+
+
+  # **** Start ****
+  # Endpoint to get announcement details for review.
+
+  /announcements/{announcementUuid}:
+    get:
+      summary: Get announcement details for review.
+      description: Get announcement details for review.
+      tags:
+        - Announcement
+      operationId: getDebtAnnReview
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+
+      responses:
+        200:
+          description: The request has succeeded and returns details for that particular announcement.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnnouncementReviewDetails'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to get announcement details for review.
+
+  # **** Start ****
+  # Endpoint to Get remarks from other NSE HO for that particular announcement.
+
+  /announcements/{announcementUuid}/remarks:
+    get:
+      summary: Get remarks from other NSE HO for that particular announcement.
+      description: Get remarks from other NSE HO for that particular announcement.
+      tags:
+        - Announcement
+      operationId: getDebtAnnReviewRemarks
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+
+      responses:
+        200:
+          description: The request has succeeded and returns list of  remarks for that particular announcement.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PreviousRemarks'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    # **** End ****
+    # Endpoint to  Get remarks from other NSE HO for that particular announcement.
+
+    # **** Start ****
+    # Endpoint to add or marked for verfication remarks.
+
+    # /announcement/{announcementUuid}/remarks:
+    put:
+      summary: add remark or send remark for verification.
+      description: add remark or send remark for verification based on boolean flag. if proceedToVerification flag is 'true' then go for verification or else it will be available to add remarks.
+      tags:
+        - Announcement
+      operationId: postDebtAnnReviewRemarks
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        description: add remark or send remark for verification based on boolean flag. if proceedToVerification flag is 'true' then go for verification or else it will be available to add remarks.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/remarkRequest'
+      responses:
+        200:
+          description: The request has succeeded and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to add or marked for verfication remarks.
+
+  # **** Start ****
+  # Endpoint to lock or unlock announcement review.
+
+  /announcements/{announcementUuid}/status:
+    get:
+      summary: check if announcement is locked or not. if announcement is locked then status will return "Locked" and if unlocked then status will return "Unlocked"
+      description: check if announcement is locked or not. if announcement is locked then status will return "Locked" and if status returns "Unlocked" then it is unlocked
+      tags:
+        - Announcement
+      operationId: getDebtAnnReviewLock
+      parameters:
+
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and returns status as string value. if requested to lock then it will check and return status = "Locked" else if other NSE Official reviewing then returns status = "Unlocked"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    # **** End ****
+    # Endpoint to lock or unlock announcement review.
+
+    # **** Start ****
+    # Endpoint to lock or unlock announcement review.
+
+    # /announcement/{announcementUuid}/status:
+    put:
+      summary: update the announcement to locked or unlocked. if announcement has to be locked then status will be updated to  "Locked" and if unlocked then status will updated to "Unlocked"
+      description: update the announcement to locked or unlocked. if announcement has to be locked then status will be updated to  "Locked" and if unlocked then status will updated to "Unlocked"
+      tags:
+        - Announcement
+      operationId: putDebtAnnReviewLock
+      parameters:
+
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                toLock:
+                  type: boolean
+
+
+      responses:
+        200:
+          description: The request has succeeded and returns status as string value. if requested to lock then it will check and return status = "Locked" else if other NSE Official reviewing then returns status = "Unlocked"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to lock or unlock announcement review.
+
+  # **** Start ****
+  # Endpoint to fetch keywords identified by the ocr which are saved in the database
+
+  /announcements/{announcementUuid}/keywords:
+    get:
+      summary: To fetch Keywords which are identified by the OCR and saved in the database
+      description: To fetch Keywords identified from the attachment
+      tags:
+        - Announcement
+      operationId: getDebtAnnReviewKeywords
+      parameters:
+
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/keywords'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+      # **** End ****
+      # Endpoint to fetch keywords identified by the ocr which are saved in the database.
+
+
+  # **** Start ****
+  # Endpoint to save exception reporting.
+
+  /announcements/{announcementUuid}/exceptionReporting:
+    post:
+      summary: save exception reporting.
+      description: save exception reporting.
+      tags:
+        - Review
+      operationId: postDebtAnnReviewExceptionReporting
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/exceptionReportRequest'
+      responses:
+        200:
+          description: The request has succeeded and save in exception reporting flag and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to save exception reporting.
+
+
+  # **** Start ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE .
+
+  /announcements/{announcementUuid}/verification:
+    post:
+      summary: verify remarks or send any suggestion to remark raised by NSE.
+      description: verifier will review and verify or send any further remarks to exchange. if filter = 'verify' then go for verification and if filter = 'suggestion' then post suggestion.
+      tags:
+        - Review
+      operationId: postDebtAnnReviewVerify
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                filter:
+                  type: string
+                verifierId:
+                  type: string
+                suggestion:
+                  type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE.
+
+  # **** Start ****
+  # Endpoint to fetch parameters and sub-parameters value
+
+  /announcements/{announcementUuid}/parameters:
+
+    get:
+      summary: To fetch parameters and sub-parameters value
+      description: This API will fetch parameter and sub-parameter values based on the aubject type defined in the announcement.
+      tags:
+        - Review
+      operationId: getDebtAnnReviewParameters
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/parameters'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    # **** End ****
+    # Endpoint to fetch parameter and sub-parameter values
+
+    # **** Start ****
+    # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE .
+
+    post:
+      summary: Save the parameter Field.
+      description: Save the parameters and sub-parameters added to the announcements by NSE official.
+      tags:
+        - Review
+      operationId: postDebtAnnReviewParameterSave
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                properties:
+                  announcementUuid:
+                    type: string
+                  parameter:
+                    type: string
+                  subParameter:
+                    type: array
+                    items:
+                      properties:
+                        sub-parameter:
+                          type: string
+                  suggestion:
+                    type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE.
+
+
+  # **** Start ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE .
+
+  /announcements/{announcementUuid}/communications:
+    get:
+      summary: Get communications in the announcement.
+      description: get communcations in the announcement using the announcementUuid.
+      tags:
+        - Review
+      operationId: postDebtAnnReviewCommunications
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CommunicationDetails'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE.
+
+  # **** Start ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE .
+
+  /announcements/{announcementUuid}/communications/disseminate:
+    post:
+      summary: Send clarification for disemmination.
+      description: Send the Clarification email to disseminate the announcement.
+      tags:
+        - Review
+      operationId: postDebtAnnReviewCommunicationsDisseminate
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                announcementUuid:
+                  type: string
+                verifierId:
+                  type: integer
+                suggestion:
+                  type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE.
+
+
+  # **** Start ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE .
+
+  /announcements/summary:
+    get:
+      summary: Get Dashboard Header data.
+      description: get the statistical Header data for the Announcement Dashboard.
+      tags:
+        - Dashboard
+      operationId: postDebtAnnDashboardGetHeaderData
+      parameters:
+
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          schema:
+            type: string
+
+      responses:
+        200:
+          description: The request has succeeded and save in exchange remarks and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/summary'
+        400:
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        500:
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # **** End ****
+  # Endpoint to verify remarks or send anyb suggestion to remark raised by NSE.
+
+
+  #**** Start ****
+  #Endpoint to update status to Confirmed for announcement
+
+  /announcement/{announcementUuid}/status:
+    put:
+      tags:
+        - Dashboard
+      summary: Update the announcement status to given by the NSE officials
+      description: Update the announcement status respectively for each announcement
+      operationId: putDebtAnnDashboardStatus
+      parameters:
+        - name: announcementUuid
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                status:
+                  type: string
+
+      responses:
+        "200":
+          description: The request has succeeded and save in exception reporting flag
+            and returns success message.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        "400":
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  #**** End ****
+  #Endpoint to update status to Confirmed for announcement
+
+
+  #**** Start ****
+  #Endpoint to add announcements in bookmark
+
+  /bookmarks:
+    post:
+      tags:
+        - Dashboard
+      summary: Add announcements to bookmarks specific for each NSE official
+      description: Add announcements to bookmarks specific for each NSE official
+      operationId: postDebtAnnBookmarks
+      parameters:
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/bookmark'
+
+      responses:
+        "200":
+          description: The request has succeeded and save selected announcements as bookmarked
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SuccessMessage'
+        "400":
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        "500":
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    get:
+      tags:
+        - Dashboard
+      summary: Get announcements to bookmarks specific for each NSE official
+      description: Get announcements to bookmarks specific for each NSE official
+      operationId: getDebtAnnBookmarks
+      parameters:
+        - name: userId
+          in: header
+          description: Logged-in user ID. UI shouldn't send this; this will be auto
+            populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entityId
+          in: header
+          description: Logged-in user's entity ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entitySourceId
+          in: header
+          description: Logged-in user's entity source ID. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: integer
+        - name: userTypeId
+          in: header
+          description: Logged-in user's User Type ID. UI shouldn't pass this; this will
+            be auto populated by SCG taking the logged-in user data from the JWT token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+        - name: entityTypeId
+          in: header
+          description: Logged-in user's Entity Type Id. UI shouldn't pass this; this
+            will be auto populated by SCG taking the logged-in user data from the JWT
+            token.
+          required: false
+          style: simple
+          explode: false
+          schema:
+            type: string
+
+      responses:
+        "200":
+          description: The request has succeeded and returns bookmarked announcements
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/bookmark'
+        "400":
+          description: invalid request.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        403:
+          description: Forbidden Access.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+        "500":
+          description: Internal server error (DB or other components error).
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+#**** End ****
+#Endpoint to update status to Confirmed for announcement
+
+
+components:
+  schemas:
+
+    Subjects:
+      type: object
+      properties:
+        subject:
+          type: array
+          items:
+            properties:
+              subjectName:
+                type: string
+              subjectId:
+                type: integer
+              categoryId:
+                type: integer
+        category:
+          type: array
+          items:
+            properties:
+              categoryName:
+                type: string
+              categoryId:
+                type: integer
+        isin:
+          type: array
+          items:
+            properties:
+              id:
+                type: number
+              subjectId:
+                type: number
+              fieldDisplay:
+                type: string
+              fieldType:
+                type: string
+              fieldValue:
+                type: string
+
+        dataFields:
+          type: array
+          items:
+            properties:
+              id:
+                type: number
+              subjectId:
+                type: number
+              fieldDisplay:
+                type: string
+              fieldType:
+                type: string
+              fieldValue:
+                type: string
+
+        disclaimer:
+          type: array
+          items:
+            properties:
+              id:
+                type: number
+              subjectId:
+                type: number
+              fieldDisplay:
+                type: string
+              fieldType:
+                type: string
+              fieldValue:
+                type: string
+
+    Files:
+      type: array
+      items:
+        properties:
+          fileUuid:
+            type: string
+          fileName:
+            type: string
+          fileType:
+            type: string
+
+    AddFiles:
+      type: object
+      properties:
+        fileUuid:
+          type: string
+        fileName:
+          type: string
+        fileType:
+          type: string
+
+    SuccessDelete:
+      type: object
+      properties:
+        statusMessage:
+          type: string
+
+    SuccessMessage:
+      type: object
+      properties:
+        statusMessage:
+          type: string
+
+    AnnouncementSubmit:
+      type: object
+      properties:
+        action:
+          type: string
+          description: value can be 'submit' or 'save draft' or 'delete'
+        announcements:
+          type: array
+          items:
+            type: object
+            properties:
+              announcementId:
+                type: string
+              categoryId:
+                type: number
+              subjectTypeId:
+                type: number
+              dataFields:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    fieldMasterId:
+                      type: number
+                    fieldsValue:
+                      type: string
+
+              announcementText:
+                type: string
+              attachementId:
+                type: string
+              remarks:
+                type: string
+              announcementStatus:
+                type: string
+
+    AnnouncementDetails:
+      type: array
+      items:
+        type: object
+        properties:
+          category:
+            type: string
+          subject:
+            type: string
+          dataFields:
+            type: object
+            properties:
+              subSubject:
+                type: string
+              periodType:
+                type: string
+              isAudited:
+                type: string
+              typeOfIndustry:
+                type: string
+              subUnderReg52:
+                type: string
+              periodEnded:
+                type: string
+              financialYearEnded:
+                type: string
+              dateOfPressRelease:
+                type: string
+              headingPressRelease:
+                type: string
+              halfYearEnded:
+                type: string
+              quarterEnded:
+                type: string
+              meetingDate:
+                type: string
+              purpose:
+                type: string
+              dateOfRevision:
+                type: string
+              designation:
+                type: string
+              nameOfPersion:
+                type: string
+              effectiveDate:
+                type: string
+              DateOfOccurrence:
+                type: string
+          isinId:
+            type: string
+          announcementText:
+            type: string
+          attachementId:
+            type: string
+          remarks:
+            type: string
+          filter:
+            type: string
+          lockedBy:
+            type: string
+          companyName:
+            type: string
+          adequacyCreationDate:
+            type: string
+          adequacyCreationTime:
+            type: string
+          status:
+            type: string
+          critical:
+            type: string
+          adequacyType:
+            type: string
+          comminicationType:
+            type: string
+          applicationNo:
+            type: string
+          handledBy:
+            type: string
+          announcementStatus:
+            type: string
+          companyStatus:
+            type: string
+          securityType:
+            type: string
+          public/Private:
+            type: string
+          tradeStatus:
+            type: string
+          listingStatus:
+            type: string
+          dueDate:
+            type: string
+          natureOfPayment:
+            type: string
+          applicationNumber:
+            type: string
+          complianceStatus:
+            type: string
+          confirmationStatus:
+            type: string
+
+    ColumnList:
+      type: object
+      properties:
+        columns:
+          type: array
+          items:
+            type: string
+
+    ISINExportRequest:
+      type: array
+      items:
+        type: object
+        properties:
+          isin:
+            type: string
+          dueDate:
+            type: string
+          paymentDate:
+            type: string
+          natureOfPayment:
+            type: string
+          oustandingIssueSize:
+            type: string
+          outstandingBonds:
+            type: string
+          recordDate:
+            type: string
+          noOfBonds:
+            type: string
+
+    ErrorResponse:
+      type: object
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+        error:
+          type: string
+        errorMsgs:
+          type: array
+          items:
+            type: string
+        path:
+          type: string
+        exceptionType:
+          type: string
+
+    ISINUploadResponse:
+      type: array
+      items:
+        type: object
+        properties:
+          isin:
+            type: string
+          dueDate:
+            type: string
+          paymentDate:
+            type: string
+          natureOfPayment:
+            type: string
+          oustandingIssueSize:
+            type: string
+          outstandingBonds:
+            type: string
+          recordDate:
+            type: string
+          noOfBonds:
+            type: string
+
+    ISINSaveRequest:
+      type: array
+      items:
+        type: object
+        properties:
+          isin:
+            type: string
+          dueDate:
+            type: string
+            format: date-time
+          paymentDate:
+            type: string
+            format: date-time
+          natureOfPayment:
+            type: string
+          oustandingIssueSize:
+            type: string
+          outstandingBonds:
+            type: string
+          recordDate:
+            type: string
+            format: date-time
+          noOfBonds:
+            type: string
+          dateOfBuyBack:
+            type: string
+            format: date-time
+
+    CommunicationDetails:
+      type: array
+      items:
+        type: object
+        properties:
+          communicatorId:
+            type: integer
+          communicationText:
+            type: string
+          type:
+            type: string
+          dateOfCommunication:
+            type: string
+
+    getISINDetails:
+      type: array
+      items:
+        type: object
+        properties:
+          isin:
+            type: string
+          dueDate:
+            type: string
+            format: date-time
+          paymentDate:
+            type: string
+            format: date-time
+          natureOfPayment:
+            type: string
+          oustandingIssueSize:
+            type: string
+          outstandingBonds:
+            type: string
+          recordDate:
+            type: string
+            format: date-time
+          noOfBonds:
+            type: string
+          datOfBuyback:
+            type: string
+            format: date-time
+
+    AnnouncementReviewDetails:
+      type: object
+      properties:
+        categoryId:
+          type: number
+        subjectTypeId:
+          type: number
+        dataFields:
+          type: array
+          items:
+            type: object
+            properties:
+              FieldsToDisplay:
+                type: string
+              FieldType:
+                type: string
+              FieldsVal:
+                type: string
+        isinData:
+          type: array
+          items:
+            type: object
+            properties:
+              isin:
+                type: string
+              dueDate:
+                type: string
+              paymentDate:
+                type: string
+              natureOfPayment:
+                type: string
+              outstandingIssueSize:
+                type: string
+              outstandingBonds:
+                type: string
+              recordDate:
+                type: string
+              noOfBonds:
+                type: string
+              datOfBuyback:
+                type: string
+
+        announcementText:
+          type: string
+        attachementId:
+          type: string
+        remarks:
+          type: string
+
+    PreviousRemarks:
+      type: array
+      items:
+        type: object
+        properties:
+          nseOfficialId:
+            type: string
+          comment:
+            type: string
+
+    remarkRequest:
+      type: object
+      properties:
+        proceedToVerification:
+          type: boolean
+          default: false
+        nseOfficialId:
+          type: string
+        comment:
+          type: string
+
+    exceptionReportRequest:
+      type: object
+      properties:
+        attachmentId:
+          type: string
+        nseOfficialId:
+          type:  integer
+        comment:
+          type: string
+        inputStatus:
+          type: string
+
+    summary:
+      type: object
+      properties:
+        drafted:
+          type: integer
+        markedVerification:
+          type: integer
+        verified:
+          type: integer
+        changeSuggested:
+          type: integer
+        critical:
+          type: integer
+        responseReceived:
+          type: integer
+        dessiminated:
+          type: integer
+
+    bookmark:
+      type: array
+      items:
+        type: string
+
+
+    keywords:
+      type: array
+      items:
+        type: object
+        properties:
+          keywords:
+            type: string
+          keywordType:
+            type: string
+          pageNo:
+            type: integer
+
+    parameters:
+      type: object
+      properties:
+        parameters:
+          type: array
+          items:
+            properties:
+              parameterName:
+                type: string
+              parameterId:
+                type: integer
+        subParameter:
+          type: array
+          items:
+            properties:
+              subParameterName:
+                type: string
+              subParameterId:
+                type: integer
+              parameterId:
+                type: integer
+

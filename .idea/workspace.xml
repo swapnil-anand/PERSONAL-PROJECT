@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="150450ae-4038-4aa2-9c25-1ec9bed88b65" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/constant/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/constant/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/constant/ErrorMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/constant/ErrorMessages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/controller/DebtAnnouncementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/controller/DebtAnnouncementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/controller/DebtDashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/controller/DebtDashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/entity/announcement/Announcements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/entity/announcement/Announcements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/entity/communication/Communications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/entity/communication/Communications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/repository/announcementandattachments/AnnouncementRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/repository/announcementandattachments/AnnouncementRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/repository/communications/CommunicationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/repository/communications/CommunicationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/repository/security/SecurityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/repository/security/SecurityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/requestbody/email/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/requestbody/email/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/requestbody/generalreport/GeneralReportRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/requestbody/generalreport/GeneralReportRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/responsebody/dashboard/GeneralReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/responsebody/dashboard/AdequacyFullReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/DebtAnnouncementServiceInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/DebtAnnouncementServiceInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/DebtDashboardControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/DebtDashboardControllerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtAnnouncementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtAnnouncementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtCommunicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtCommunicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtDashboardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtDashboardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nse/listingcompliance/lcdebtannouncementservice/service/implementation/DebtFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - DEBT_ANN@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - DEBT_ANN@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - DEBT_ANN@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="debt_ann: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="51e2bc6d-0821-4305-9b15-79343479112b" />
+    </checked>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="248QlM3Aol32M8cAqfjTWIWD6vq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WIPRO_DATA/SQL_INSER_SCRIPT" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nse.listingcompliance.lcdebtannouncementservice.repository.logindefinition" />
+      <recent name="com.nse.listingcompliance.lcdebtannouncementservice.entity.logindefinition" />
+      <recent name="com.nse.listingcompliance.lcdebtannouncementservice.service" />
+      <recent name="com.nse.listingcompliance.lcdebtannouncementservice.service.implementation" />
+      <recent name="com.nse.listingcompliance.lcdebtannouncementservice.repository.CompanyDashboard" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LcDebtAnnouncementServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="lc-debt-announcement-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nse.listingcompliance.lcdebtannouncementservice.LcDebtAnnouncementServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.13852814" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="MySQL - DEBT_ANN@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="MySQL - DEBT_ANN@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1bdaa1a" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="MySQL - DEBT_ANN@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@51476318" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="150450ae-4038-4aa2-9c25-1ec9bed88b65" name="Default Changelist" comment="" />
+      <created>1643009884150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643009884150</updated>
+      <workItem from="1643009890695" duration="8549000" />
+      <workItem from="1643019068480" duration="18094000" />
+      <workItem from="1643083501348" duration="25246000" />
+      <workItem from="1643180582854" duration="15288000" />
+      <workItem from="1643257811210" duration="16009000" />
+      <workItem from="1643286438562" duration="11009000" />
+      <workItem from="1643344484503" duration="15886000" />
+      <workItem from="1643366048439" duration="9194000" />
+      <workItem from="1643387396469" duration="1309000" />
+      <workItem from="1643446068489" duration="95000" />
+      <workItem from="1643603533489" duration="30951000" />
+      <workItem from="1643689852969" duration="29823000" />
+      <workItem from="1643776558742" duration="30780000" />
+      <workItem from="1643862374687" duration="26914000" />
+      <workItem from="1643951683355" duration="5074000" />
+      <workItem from="1643957907373" duration="6941000" />
+      <workItem from="1643971092658" duration="17771000" />
+      <workItem from="1644038273719" duration="36264000" />
+      <workItem from="1644136672391" duration="27575000" />
+      <workItem from="1644208454651" duration="34335000" />
+    </task>
+    <task id="LOCAL-00001" summary="made several changes in nse-dashboard section and its api">
+      <created>1643729532876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643729532877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="made several changes in nse-dashboard section and its api" />
+    <option name="LAST_COMMIT_MESSAGE" value="made several changes in nse-dashboard section and its api" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1643822912523">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1643822912523" />
+    <state x="552" y="178" key="#SQL_Dialects" timestamp="1643822959664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1643822959664" />
+    <state x="72" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643725095370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="72" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643725095370" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1644167902566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="612" y="187" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1644155619749" />
+    <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1644167902566" />
+    <state x="274" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1644147824870">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="274" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1644147824870" />
+    <state x="566" y="272" width="628" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1644149015675">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="566" y="272" width="628" height="287" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1644149015675" />
+    <state x="412" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1644149921370">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="412" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1644149921370" />
+    <state x="544" y="114" key="CommitChangelistDialog2" timestamp="1643729531083">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="544" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643729531083" />
+    <state x="584" y="128" key="ExecutionTargetDialog" timestamp="1644142986983">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="128" key="ExecutionTargetDialog/0.0.1536.824@0.0.1536.824" timestamp="1644142986983" />
+    <state x="730" y="162" key="ExecutionTargetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643828669505" />
+    <state x="88" y="0" key="FileChooserDialogImpl" timestamp="1643999015841">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="88" y="0" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643999015841" />
+    <state width="863" height="857" key="GridCell.Tab.0.bottom" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1643966814767" />
+    <state width="1243" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1644161922663" />
+    <state width="863" height="857" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state width="863" height="857" key="GridCell.Tab.0.center" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1643966814759" />
+    <state width="1243" height="224" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1644161922662" />
+    <state width="863" height="857" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state width="863" height="857" key="GridCell.Tab.0.left" timestamp="1644257253761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1643966814752" />
+    <state width="1243" height="224" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1644161922662" />
+    <state width="863" height="857" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253761" />
+    <state width="863" height="857" key="GridCell.Tab.0.right" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1643966814762" />
+    <state width="1243" height="224" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1644161922662" />
+    <state width="863" height="857" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state width="863" height="857" key="GridCell.Tab.1.bottom" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1643966814769" />
+    <state width="668" height="433" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1644161582821" />
+    <state width="863" height="857" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state width="863" height="857" key="GridCell.Tab.1.center" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1643966814768" />
+    <state width="668" height="433" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1644161582820" />
+    <state width="863" height="857" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state width="863" height="857" key="GridCell.Tab.1.left" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1643966814767" />
+    <state width="668" height="433" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1644161582820" />
+    <state width="863" height="857" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state width="863" height="857" key="GridCell.Tab.1.right" timestamp="1644257253762">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="816" height="885" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1643966814768" />
+    <state width="668" height="433" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1644161582820" />
+    <state width="863" height="857" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1644257253762" />
+    <state x="80" y="0" key="SettingsEditor" timestamp="1644161757268">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="67" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1644137046853" />
+    <state x="80" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1644161757268" />
+    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1643800804119" />
+    <state x="490" y="154" width="540" height="524" key="StructurePopup" timestamp="1644152182839">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="490" y="154" width="540" height="524" key="StructurePopup/0.0.1536.824@0.0.1536.824" timestamp="1644152182839" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643729558733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643729558733" />
+    <state x="440" y="93" key="com.intellij.database.dbimport.ImportDialog" timestamp="1643818855859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="93" key="com.intellij.database.dbimport.ImportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643818855859" />
+    <state x="725" y="310" width="470" height="415" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1644222851333">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="310" width="470" height="415" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1644222851333" />
+    <state x="714" y="274" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1643733835064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="274" key="com.intellij.database.run.ParametersPanel.Standalone/0.0.1920.1040@0.0.1920.1040" timestamp="1643733835064" />
+    <state x="601" y="78" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1643864916475">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="601" y="78" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643864916475" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1644208454291">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="437" y="225" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1644136715756" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1644208454291" />
+    <state x="624" y="225" key="extract.method.dialog" timestamp="1644216281834">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="499" y="178" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1644145221882" />
+    <state x="624" y="225" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1644216281834" />
+    <state x="652" y="363" width="665" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1643387516562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="652" y="363" width="665" height="285" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643387516562" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1643983169657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1643983169657" />
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup" timestamp="1644155271896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="178" width="672" height="538" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1644155271896" />
+    <state x="623" y="225" width="840" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1644082532197" />
+  </component>
+</project>

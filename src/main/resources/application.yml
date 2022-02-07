@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: lc-debt-announcement-service
+  profiles:
+    active: '${PROFILE:development}'
+  cloud:
+    service-registry:
+      auto-registration:
+        enabled: false
+    config:
+      name: ${spring.application.name}, lc-common-services, app-ref-data-config
+      discovery:
+        enabled: true
+        service-id: config-server
+      fail-fast: false
+
+
+  datasource:
+    # Below configuration is for database connectivity
+    # Below url should be in the format
+    # "jdbc:oracle:thin:@<server_name>:<database_port>:<SID>"
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/DEBT_ANN #jdbc:oracle:thin:@10.81.63.18:1521:PRVTNDB #
+    username: root #DEBTANNGAR
+    password: admin #DEBTANN#123
+    driver-class-name: com.mysql.cj.jdbc.Driver #oracle.jdbc.driver.OracleDriver
+  #    url: jdbc:oracle:thin:@10.81.63.18:1521:PRVTNDB
+  #      username: STPIGAR
+  #      password: STPI#123
+  #      driver-class-name: oracle.jdbc.driver.OracleDriver
+
+
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      enabled: true
+      max-request-size: 1024MB
+#  devtools:
+#    livereload:
+#      enabled: true
+server:
+  port: 8090
+  servlet:
+    context-path: /v1
+
+
+eureka:
+  instance:
+    hostname: '${vcap.application.uris[0]:localhost:${server.port}}'
+    nonSecurePortEnabled: false
+    securePortEnabled: true
+    securePort: 443
+    statusPageUrl: https://${eureka.hostname}${server.servlet.context-path}/actuator/info
+    homePageUrl: https://${eureka.hostname}${server.servlet.context-path}/
+  client:
+    serviceUrl:
+      defaultZone: '${EUREKA_SERVER:https://service-registry.apps.dev1.nseparivartan.com/eureka/}'
+
