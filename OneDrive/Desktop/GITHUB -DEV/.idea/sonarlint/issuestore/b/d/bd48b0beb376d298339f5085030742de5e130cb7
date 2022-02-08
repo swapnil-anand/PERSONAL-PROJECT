@@ -1,0 +1,31 @@
+
+X
+java:S1854X"BRemove this useless assignment to local variable "subjectKeyword".(„ŞÕÂ
+I
+java:S1481X"3Remove this unused "subjectKeyword" local variable.(„ŞÕÂ
+h
+java:S1192‹"LDefine a constant instead of duplicating this literal "__OCR__ %s" 11 times.(Šß«üÿÿÿÿ
+@
+java:S2629‹"$Invoke method(s) only conditionally.(Šß«üÿÿÿÿ
+;
+java:S2629Œ"$Invoke method(s) only conditionally.(ÅÓºŞ
+;
+java:S2629"$Invoke method(s) only conditionally.(†¿ÎÂ
+@
+java:S2629"$Invoke method(s) only conditionally.(Ê°ø¾şÿÿÿÿ
+:
+java:S2629"$Invoke method(s) only conditionally.(‚–¤s
+@
+java:S2629‘"$Invoke method(s) only conditionally.(ÁÔ„Ìüÿÿÿÿ
+;
+java:S2629’"$Invoke method(s) only conditionally.(ÄÉå
+@
+java:S2629“"$Invoke method(s) only conditionally.(Ÿõ²öûÿÿÿÿ
+:
+java:S2629”"$Invoke method(s) only conditionally.(ÄÁ¥^
+@
+java:S2629œ"$Invoke method(s) only conditionally.(±¥šÖüÿÿÿÿ
+;
+java:S2629¥"$Invoke method(s) only conditionally.(ßÊ­ø
+;
+java:S2629¨"$Invoke method(s) only conditionally.(®Ï“ö

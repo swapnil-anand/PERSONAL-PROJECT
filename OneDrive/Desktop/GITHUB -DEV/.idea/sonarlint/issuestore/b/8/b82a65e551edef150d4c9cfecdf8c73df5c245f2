@@ -1,0 +1,7 @@
+
+o	java:S100j"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ùò°şÿÿÿÿ8ÿ°¯Ãí/
+j	java:S100}"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ÂÁƒ8‚±¯Ãí/
+¬
+java:S1128"‰Remove this unused import 'com.nse.listingcompliance.lcdebtannouncementservice.responsebody.generalreportsubreport.AdequacySubParameter'.(Û—ù¼üÿÿÿÿ8±¯Ãí/
+š
+java:S1128"}Remove this unused import 'com.nse.listingcompliance.lcdebtannouncementservice.responsebody.parametermaster.ParameterMaster'.(ƒ÷¸8±¯Ãí/

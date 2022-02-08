@@ -1,0 +1,10 @@
+
+t	java:S116"XRename this field "cfy_symbol_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛÕİ8¡¯Ó°é/
+{	java:S116"ZRename this field "cfy_fin_from_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤­ç§øÿÿÿÿ8¢¯Ó°é/
+x	java:S116"WRename this field "cfy_creat_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎıšÙüÿÿÿÿ8¢¯Ó°é/
+s	java:S116"WRename this field "cfy_creat_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ì”ó8¢¯Ó°é/
+t	java:S116"XRename this field "cfy_fin_to_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(»ãŠ¹8¢¯Ó°é/
+u	java:S116!"YRename this field "cfy_lst_upd_bt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØëçŠ8£¯Ó°é/
+z	java:S116#"YRename this field "cfy_lst_upd_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ¨ø«øÿÿÿÿ8£¯Ó°é/
+m	java:S116&"QRename this field "cfy_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„Î•¤8£¯Ó°é/
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¾Şúr

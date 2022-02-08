@@ -1,0 +1,11 @@
+
+h	java:S116"SRename this field "file_url" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã£Áë
+l	java:S116"WRename this field "company_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôÀÔÜ
+o	java:S116"ZRename this field "pdf_was_scanned" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘Õä£
+v	java:S116"aRename this field "subject_keywords_found" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ôÀÙ
+|	java:S116"bRename this field "subject_keywords_missed" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½Öß£úÿÿÿÿ
+	java:S116"jRename this field "negative_generic_keywords_found" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾ÀÉ¥
+„	java:S116"jRename this field "negative_subject_keywords_found" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷Í½úùÿÿÿÿ
+o	java:S116"URename this field "text_excel" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Ô»±ùÿÿÿÿ
+V	java:S125 "<This block of commented-out lines of code should be removed.(¡öœ©ýÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÛœßÁ

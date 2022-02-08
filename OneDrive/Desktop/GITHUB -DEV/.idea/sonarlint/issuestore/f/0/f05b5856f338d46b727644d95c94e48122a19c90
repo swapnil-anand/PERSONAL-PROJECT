@@ -1,0 +1,40 @@
+
+j	java:S116"PRename this field "cm_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ıÜó”ıÿÿÿÿ
+i	java:S116"TRename this field "cm_symbol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºîÓÛ
+q	java:S116"WRename this field "cm_symbol_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÕıëşÿÿÿÿ
+m	java:S116"XRename this field "cm_old_symbol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êØı
+v	java:S116"\Rename this field "cm_base_symbol_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£šïüÿÿÿÿ
+s	java:S116!"YRename this field "cm_base_symbol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š‚üÿÿÿÿ
+t	java:S116#"ZRename this field "cm_company_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éª¡úÿÿÿÿ
+n	java:S116%"YRename this field "cm_issuer_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±æºª
+y	java:S116'"_Rename this field "cm_cg_effective_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÓÛáıÿÿÿÿ
+y	java:S116)"_Rename this field "cm_sym_create_module" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²§ ¨ûÿÿÿÿ
+w	java:S116+"]Rename this field "cm_reg_stock_exchg" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¢­¡ıÿÿÿÿ
+s	java:S116-"YRename this field "cm_fin_from_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Ö¬¯üÿÿÿÿ
+s	java:S116/"YRename this field "cm_fin_to_date" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ…Ğùÿÿÿÿ
+q	java:S1161"WRename this field "cm_create_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú½±–úÿÿÿÿ
+l	java:S1163"WRename this field "cm_create_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖšµÖ
+l	java:S1165"WRename this field "cm_update_By" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢¹ßğ
+k	java:S1167"WRename this field "cm_update_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åäƒV
+j	java:S1169"URename this field "cm_history" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÃéùÕ
+k	java:S116;"QRename this field "cm_cin" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ôˆÇ‹ÿÿÿÿÿ
+k	java:S116="VRename this field "cm_co_am_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹Ìƒ¡
+k	java:S116?"VRename this field "cm_rg_am_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½àÙË
+m	java:S116A"SRename this field "cm_cp_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ïÎ©ùÿÿÿÿ
+n	java:S116C"TRename this field "cm_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ûö ûÿÿÿÿ
+j	java:S116E"URename this field "cm_website" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÇ„Õ
+o	java:S116G"ZRename this field "cm_company_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¬Í
+n	java:S116I"YRename this field "cm_approved_by" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éúİü
+n	java:S116K"YRename this field "cm_approved_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(®Ãóº
+l	java:S116M"WRename this field "cm_scores_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üàê
+n	java:S116O"YRename this field "cm_debt_symbol" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¯“õ
+x	java:S116Q"^Rename this field "cm_is_debt_eligible" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õù¿¥úÿÿÿÿ
+i	java:S116S"TRename this field "cm_org_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬™¸€
+p	java:S116U"[Rename this field "cm_industry_desc" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¸“
+j	java:S116W"URename this field "cm_inc_act" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°í†£
+n	java:S116Y"TRename this field "cm_inc_dt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼¿„÷ıÿÿÿÿ
+o	java:S116["[Rename this field "cm_mark_deletion" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Ã˜u
+q	java:S116]"\Rename this field "cm_listing_status" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æÚÌ‰
+u	java:S116_"[Rename this field "cm_security_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åÓîûÿÿÿÿ
+q	java:S116a"\Rename this field "cm_is_cm_eligible" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›èÚ‹
+t	java:S116c"ZRename this field "cm_eq_list_type" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(şºîıÿÿÿÿ
